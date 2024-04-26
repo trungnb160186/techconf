@@ -10,8 +10,7 @@ app.config.from_object('config.DevelopmentConfig')
 
 app.secret_key = app.config.get('SECRET_KEY')
 
-queue_client = ServiceBusClient.from_connection_string(app.config.get('SERVICE_BUS_CONNECTION_STRING'),
-                                                 app.config.get('SERVICE_BUS_QUEUE_NAME'))
+service_client = ServiceBusClient.from_connection_string(app.config.get('SERVICE_BUS_CONNECTION_STRING'))
 
 db = SQLAlchemy(app)
 
