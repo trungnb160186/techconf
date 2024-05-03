@@ -65,8 +65,8 @@ def notification():
         notification.submitted_date = datetime.utcnow()
 
         try:
-            # db.session.add(notification)
-            # db.session.commit()
+            db.session.add(notification)
+            db.session.commit()
 
             ##################################################
             ## TODO: Refactor This logic into an Azure Function
