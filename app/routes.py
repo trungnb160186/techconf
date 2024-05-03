@@ -83,7 +83,7 @@ def notification():
             # db.session.commit()
             # Call servicebus queue_client to enqueue notification ID
             sender = service_client.get_queue_sender(app.config.get('SERVICE_BUS_QUEUE_NAME'))
-            message = ServiceBusMessage(notification.id)
+            message = ServiceBusMessage(str(notification.id))
             sender.send_messages(message)
             #################################################
             ## END of ToDo
