@@ -13,7 +13,7 @@ class BaseConfig:
     CONFERENCE_ID = 1
     SECRET_KEY = 'LWd2tzlprdGHCIPHTd4tp5SBFgDszm'
     SERVICE_BUS_CONNECTION_STRING ='Endpoint=sb://udacitytrungnb12project3.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=ZM4SzkhAaRkhQOJS5MlYdUzXM59BzG2oQ+ASbIQgJYw=' #TODO: Update value
-    SERVICE_BUS_QUEUE_NAME ='notificationqueue'
+    SERVICE_BUS_QUEUE_NAME ='queue-project3'
     ADMIN_EMAIL_ADDRESS: 'info@techconf.com'
     SENDGRID_API_KEY = '' #Configuration not required, required SendGrid Account
 
